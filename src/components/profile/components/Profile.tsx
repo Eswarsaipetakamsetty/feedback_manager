@@ -29,6 +29,7 @@ const Profile = () => {
     }
   }, [paramEmail, navigate]);
 
+  console.log(email)
   const { user, loading, error } = useUserByEmail(email);
 
   if (loading) return <LoadingSpinner />;

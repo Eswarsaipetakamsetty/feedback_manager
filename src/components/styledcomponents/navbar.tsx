@@ -70,7 +70,7 @@ const Navbar = () => {
             />
             {dropdownOpen && (
               <div className={styles.dropdown}>
-                <button onClick={() => navigate("/profile/:email")}>Profile</button>
+                <button onClick={() => navigate(`/profile/${user.email}`)}>Profile</button>
                 <button onClick={handleLogout}>Logout</button>
               </div>
             )}

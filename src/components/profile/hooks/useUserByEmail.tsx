@@ -26,7 +26,7 @@ const useUserByEmail = (email: string | null) => {
         const data = await apiClient.request("GET", `auth/user/by_email/?email=${email}`);
         setUser(data);
       } catch (err: any) {
-        setError(err.response?.data?.message || "Failed to fetch profile");
+        setError(err.response?.data?.detail || "Failed to fetch profile");
       } finally {
         setLoading(false);
       }
