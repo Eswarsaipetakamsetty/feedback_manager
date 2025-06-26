@@ -152,25 +152,22 @@ npm run dev
 Open in browser at: http://localhost:5173
 
 ### 🛠️ API Endpoints Used
-```text
-POST /auth/register/
+| **Path**            | **Component**         | **Description**                                            |
+| ------------------- | --------------------- | ---------------------------------------------------------- |
+| `/register`         | `Register`            | User registration form with manager option.                |
+| `/login`            | `Login`               | User login form.                                           |
+| `/dashboard`        | `Dashboard`           | Main dashboard showing stats, team info, and activity log. |
+| `/write-feedback`   | `SubmitFeedback`      | Form to submit feedback for a team member.                 |
+| `/feedback-history` | `FeedbackHistory`     | View feedbacks submitted by the user.                      |
+| `/feedback`         | `FeedbackOptions`     | General feedback options interface.                        |
+| `/give-feedback`    | `GiveFeedbackOptions` | Options for self-feedback or requesting feedback.          |
+| `/team`             | `Team`                | Displays team members and options for manager/member.      |
+| `/profile/:email`   | `Profile`             | Public profile of the user with dynamic email as param.    |
+| `/team/add-members` | `AddMembers`          | Manager can add team members from here.                    |
+| `/createteam`       | `CreateTeam`          | Manager can create a new team.                             |
+| `/reviewfeedback`   | `ReviewFeedback`      | Manager can review pending feedbacks here.                 |
+| `/reviews`          | `ReviewedFeedbacks`   | Manager can view feedbacks they've reviewed.               |
 
-POST /auth/login/
-
-GET /auth/user/
-
-GET /team/
-
-GET /team/count/
-
-GET /activity/
-
-GET /feedback/manager/reviewed/
-
-GET /feedback/
-
-POST /feedback/
-```
 
 All requests are configured using src/api/ApiClient.ts and src/api/index.ts.
 
