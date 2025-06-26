@@ -1,0 +1,107 @@
+.feedbackContainer {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.heading {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+/* Manager Review Cards */
+.managerCard {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.2s;
+}
+.managerCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.managerCard p {
+  margin: 0.4rem 0;
+}
+.managerCard input,
+.managerCard textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.managerCard button {
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.2rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.managerCard button:hover {
+  background: #1e4fc0;
+}
+
+/* Employee View Cards */
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+.cardList .card {
+  background: #f3f4f6;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cardList .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Detail View */
+.detailView {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.left, .right {
+  flex: 1;
+  background: #fff;
+  padding: 1.2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+.left h4, .right h4 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #2563eb;
+}
+.left p, .right p {
+  margin: 0.4rem 0;
+  line-height: 1.4;
+}
+.right em {
+  color: #6b7280;
+}
+
+/* Errors & Loading */
+.error {
+  color: #b91c1c;
+  text-align: center;
+  margin: 1rem 0;
+}

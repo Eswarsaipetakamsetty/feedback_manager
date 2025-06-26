@@ -1,0 +1,92 @@
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.listContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.dateList {
+  width: 160px;
+  list-style: none;
+  padding: 0;
+  border-right: 1px solid #e2e8f0;
+}
+
+.dateList li {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.dateList li:hover,
+.dateList li.activeDate {
+  background: #ebf4ff;
+}
+
+.detailPanel {
+  flex: 1;
+  padding: 1rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.section h3 {
+  margin-bottom: 0.4rem;
+  color: #1a202c;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #cbd5e0;
+  padding-bottom: 0.2rem;
+}
+
+.section p {
+  margin: 0.4rem 0;
+  color: #4a5568;
+}
+
+.placeholder {
+  color: #718096;
+  font-style: italic;
+}
+
+.timestamp {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #a0aec0;
+}
+
+.error {
+  color: #e53e3e;
+  padding: 1rem;
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  padding: 2rem;
+  color: #718096;
+}
+
+/* Fade-in keyframe */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

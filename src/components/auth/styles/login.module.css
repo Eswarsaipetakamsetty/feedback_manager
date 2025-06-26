@@ -1,0 +1,112 @@
+/* Container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+  padding: 2rem;
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+/* Password section */
+.passwordcontainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Show/hide password button */
+.passwordbutton {
+  background-color: transparent;
+  border: none;
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+.passwordbutton:hover {
+  color: #1e40af;
+}
+
+/* Submit button */
+.Button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Button:hover {
+  background-color: #1e40af;
+}
+.Button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Bottom text */
+.bottom {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+.link {
+  color: #2563eb;
+  margin-left: 0.25rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  text-align: center;
+}

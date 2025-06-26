@@ -1,0 +1,159 @@
+/* Main navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menuButton {
+  font-size: 24px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdown button {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: #f3f4f6;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.authLink {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.authLink:hover {
+  background-color: white;
+  color: #1f2937;
+}
+
+/* Sidebar */
+.sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 20;
+  padding: 1rem;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.closeBtn {
+  background: none;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+}
+
+.navList li {
+  margin-bottom: 1rem;
+}
+
+.navList li button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.navList li button:hover {
+  color: #1f2937;
+  font-weight: bold;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 15;
+}
