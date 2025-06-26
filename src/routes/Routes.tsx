@@ -12,8 +12,7 @@ import AddMembers from "../components/team/components/AddMembers";
 import CreateTeam from "../components/team/components/CreateTeam";
 import FeedbackHistory from "../components/feedback/components/FeedbackHistory";
 import ReviewedFeedbacks from "../components/feedback/components/ReviewedFeedbacks";
-import Root from "../components/root/root";
-
+import Root from "../components/root/Root";
 
 
 function Routing() {
