@@ -9,7 +9,6 @@ const CreateTeam = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [emails, setEmails] = useState<string[]>([""]);
-  const [isManager, setIsManager] = useState(false);
 
   useEffect(() => {
     const userStr = Cookies.get("user_data");
@@ -17,8 +16,6 @@ const CreateTeam = () => {
     try {
       const user = JSON.parse(userStr);
       if (!user.is_manager) return navigate("/dashboard");
-      console.log(isManager)
-      setIsManager(true);
     } catch {
       navigate("/login");
     }
