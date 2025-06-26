@@ -17,6 +17,7 @@ const CreateTeam = () => {
     try {
       const user = JSON.parse(userStr);
       if (!user.is_manager) return navigate("/dashboard");
+      console.log(isManager)
       setIsManager(true);
     } catch {
       navigate("/login");
