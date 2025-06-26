@@ -12,6 +12,7 @@ import AddMembers from "../components/team/components/AddMembers";
 import CreateTeam from "../components/team/components/CreateTeam";
 import FeedbackHistory from "../components/feedback/components/FeedbackHistory";
 import ReviewedFeedbacks from "../components/feedback/components/ReviewedFeedbacks";
+import Root from "../components/root/root";
 
 
 
@@ -20,6 +21,7 @@ function Routing() {
     return (
         < Router >
             < Routes >
+                <Route path="/" element={<Root />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/dashboard" element={<Dashboard />} />
